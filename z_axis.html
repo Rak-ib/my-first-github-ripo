@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z_axis</title>
+    <style>
+        .box{
+            position: relative;
+        }
+        .boy{
+            z-index: 10;
+            top: 55px;
+        }
+        .ring{
+            top:-20px;
+            z-index: 5;
+        }
+        .water{
+            top: -115px;
+        }
+        h3::after{
+            content: '.pdf';
+        }
+
+    </style>
+</head>
+<body>
+    <h3>z_axis</h3>
+    <div class="swim-container">
+        <div class="box boy"><img src="swim/boy.svg" alt=""></div>
+        <div class="box ring"><img src="swim/ring.svg" alt=""></div>
+        <div class="box water"><img src="swim/water.svg" alt=""></div>
+    </div>
+    <h3>heading 1</h3>
+    <h3>heading 2</h3>
+    <h3>heading 3</h3>
+</body>
+</html>
