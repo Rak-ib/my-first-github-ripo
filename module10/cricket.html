@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket height</title>
+    <style>
+        :root{
+            --background-color:black;
+        }
+        .field{
+            border-bottom: 2px solid green;
+            width: 100vw;
+            height: 70vh;
+        }
+        img{
+            margin: 240px 0px 0px 250px;
+            /* border: 1px solid black; */
+            width: 200px;
+            position: relative;
+            animation: hitball 5s ease-in 0s infinite ;
+        }
+        /* .field:hover img{
+            transform:rotate(-70deg);
+            transform-origin: top right;
+        } */
+        
+        .ball{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 25px;
+            position: relative;
+            bottom: 200px;
+            left: 1000px;
+            animation: hitsix 5s ease-in 0s infinite backwards;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+        }
+
+        @keyframes hitsix {
+            0%{
+                bottom:200px;
+                left:1000px;
+            }
+            50%{
+                bottom:70px;
+                left:600px;
+            }
+            100%{
+                bottom:400px;
+                left:1000px;
+            }
+            
+        }
+        @keyframes hitball {
+            50%{
+                transform:rotate(-80deg);
+                transform-origin: top right;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="field">
+        <img src="pic/bat1.png" alt="">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
